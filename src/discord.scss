@@ -123,6 +123,10 @@ main {
           &:focus {
             outline: 0.0625rem solid $color-blue;
           }
+
+          &:hover {
+            cursor: text;
+          }
         }
       }
 
@@ -309,7 +313,6 @@ a {
     height: 100vh;
 
     > section.form-container {
-      // Full width
       padding: 1rem;
       width: 100%;
     }

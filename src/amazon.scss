@@ -1,4 +1,3 @@
-// Colors
 $color-black-light: #111111;
 $color-gray-darker: #333333;
 $color-gray-light: #dddddd;
@@ -52,6 +51,10 @@ main > section {
       margin-bottom: 20px;
       padding: 12px;
       width: 100%;
+
+      &:hover {
+        cursor: text;
+      }
     }
 
     button {

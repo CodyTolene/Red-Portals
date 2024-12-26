@@ -1,4 +1,3 @@
-// Colors
 $color-black: #1d2329;
 $color-blue-light: #6ea8fe;
 $color-blue: #0d6efd;
@@ -96,6 +95,10 @@ main {
           border-color: $color-blue-focus;
           box-shadow: 0 0 0 0.25rem $color-blue-shadow;
           outline: none;
+        }
+
+        &:hover {
+          cursor: text;
         }
       }
 

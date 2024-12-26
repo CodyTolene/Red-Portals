@@ -1,4 +1,3 @@
-// Colors
 $color-black-light: #111111;
 $color-blue-dark: #00385f;
 $color-gray-dark: #808080;
@@ -54,8 +53,12 @@ main > section {
       width: 100%;
 
       &:focus {
-        outline-offset: 2px;
+        outline-offset: -2px;
         outline: 2px solid $color-blue-dark;
+      }
+
+      &:hover {
+        cursor: text;
       }
     }
 
