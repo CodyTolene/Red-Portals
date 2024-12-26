@@ -43,23 +43,23 @@ to:
 
 | Portal            | Preview                                                              | Size     | Inspired By                                                                          |
 | ----------------- | -------------------------------------------------------------------- | -------- | ------------------------------------------------------------------------------------ |
-| Alaska Airlines   | [portals/alaska-airlines/index.html][url-portal-alaska-airlines]     | 2.74 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-alaska-airlines]            |
-| Amazon            | [portals/amazon/index.html][url-portal-amazon]                       | 3.95 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-amazon]                     |
-| Apple             | [portals/apple/index.html][url-portal-apple]                         | 5.28 KB  | [@jules0835][url-jules0835] - [link][url-jules0835-apple]                            |
-| AT&T              | [portals/att/index.html][url-portal-att]                             | 3.83 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-att]                        |
-| Delta Airlines    | [portals/delta-airlines/index.html][url-portal-delta-airlines]       | 2.54 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-delta-airlines]    |
-| Discord           | [portals/discord/index.html][url-portal-discord]                     | 6.48 KB  | [@JMcrafter26][url-jmcrafter26] - [link][url-jmcrafter26-discord]                    |
-| Facebook          | [portals/facebook/index.html][url-portal-facebook]                   | 2.65 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-facebook]                   |
-| Google            | [portals/google/index.html][url-portal-google]                       | 5.28 KB  | [@breaching][url-breaching] - [link][url-breaching-google]                           |
-| Instagram         | [portals/instagram/index.html][url-portal-instagram]                 | 4.01 KB  | [@JMcrafter26][url-jmcrafter26] - [link][url-jmcrafter26-instagram]                  |
-| Microsoft         | [portals/microsoft/index.html][url-portal-microsoft]                 | 4.71 KB  | [@Awlexegrecki][url-awlexegrecki] - [link][url-awlexegrecki-microsoft]               |
-| Southwest Airline | [portals/southwest-airline/index.html][url-portal-southwest-airline] | 3.72 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-southwest-airline] |
-| Spectrum          | [portals/spectrum/index.html][url-portal-spectrum]                   | 3.16 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-spectrum]                   |
-| Spirit Airlines   | [portals/spirit-airlines/index.html][url-portal-spirit-airlines]     | 2.55 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-spirit-airlines]            |
-| Starbucks         | [portals/starbucks/index.html][url-portal-starbucks]                 | 10.70 KB | [@kleo][url-kleo] - [link][url-kleo-starbucks]                                       |
-| Starlink          | [portals/starlink/index.html][url-portal-starlink]                   | 3.41 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-starlink]                   |
-| T-Mobile          | [portals/t-mobile/index.html][url-portal-t-mobile]                   | 2.86 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-t-mobile]          |
-| Verizon           | [portals/verizon/index.html][url-portal-verizon]                     | 2.93 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-verizon]           |
+| Alaska Airlines   | [portals/alaska-airlines/index.html][url-portal-alaska-airlines]     | 2.78 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-alaska-airlines]            |
+| Amazon            | [portals/amazon/index.html][url-portal-amazon]                       | 3.99 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-amazon]                     |
+| Apple             | [portals/apple/index.html][url-portal-apple]                         | 5.33 KB  | [@jules0835][url-jules0835] - [link][url-jules0835-apple]                            |
+| AT&T              | [portals/att/index.html][url-portal-att]                             | 3.88 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-att]                        |
+| Delta Airlines    | [portals/delta-airlines/index.html][url-portal-delta-airlines]       | 2.58 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-delta-airlines]    |
+| Discord           | [portals/discord/index.html][url-portal-discord]                     | 6.55 KB  | [@JMcrafter26][url-jmcrafter26] - [link][url-jmcrafter26-discord]                    |
+| Facebook          | [portals/facebook/index.html][url-portal-facebook]                   | 2.69 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-facebook]                   |
+| Google            | [portals/google/index.html][url-portal-google]                       | 5.35 KB  | [@breaching][url-breaching] - [link][url-breaching-google]                           |
+| Instagram         | [portals/instagram/index.html][url-portal-instagram]                 | 4.05 KB  | [@JMcrafter26][url-jmcrafter26] - [link][url-jmcrafter26-instagram]                  |
+| Microsoft         | [portals/microsoft/index.html][url-portal-microsoft]                 | 4.75 KB  | [@Awlexegrecki][url-awlexegrecki] - [link][url-awlexegrecki-microsoft]               |
+| Southwest Airline | [portals/southwest-airline/index.html][url-portal-southwest-airline] | 3.77 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-southwest-airline] |
+| Spectrum          | [portals/spectrum/index.html][url-portal-spectrum]                   | 3.21 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-spectrum]                   |
+| Spirit Airlines   | [portals/spirit-airlines/index.html][url-portal-spirit-airlines]     | 2.60 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-spirit-airlines]            |
+| Starbucks         | [portals/starbucks/index.html][url-portal-starbucks]                 | 10.74 KB | [@kleo][url-kleo] - [link][url-kleo-starbucks]                                       |
+| Starlink          | [portals/starlink/index.html][url-portal-starlink]                   | 3.45 KB  | [@roshanravan][url-roshanravan] - [link][url-roshanravan-starlink]                   |
+| T-Mobile          | [portals/t-mobile/index.html][url-portal-t-mobile]                   | 2.90 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-t-mobile]          |
+| Verizon           | [portals/verizon/index.html][url-portal-verizon]                     | 2.97 KB  | [@bigbrodude6119][url-bigbrodude6119] - [link][url-bigbrodude6119-verizon]           |
 
 <p align="right">[ <a href="#index">Index</a> ]</p>
 
