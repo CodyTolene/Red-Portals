@@ -131,32 +131,34 @@ realistic examples of how these systems operate, this repository aims to:
 This repository is open to contributions that improve the educational value of
 the provided examples. To get started with development:
 
-1. Fork this repository to your GitHub account.
-2. Clone your fork to your local machine.
-3. Create a new branch for your changes.
-4. Ensure node.js and npm are installed on your machine.
-5. Run `npm install` to install dependencies.
-6. Make your changes to the files in the `src/` folder, and test them locally:
-   - Use `npm run build:watch` to watch for changes and rebuild the project.
-   - Navigate to "http://localhost:8080/{filename}/index.html" to view changes
-     (replace `{filename}` with the file you want to view).
-7. Once you're happy with the changes, you can finalize your changes with
-   `npm run build`.
+1. Fork this repository.
+2. Ensure node.js and npm are installed on your machine.
+3. In a new terminal, run `npm install` to install the required development
+   dependencies using Node Package Manager.
+4. Run `npm run build:watch` to watch for changes to files (HTML/SCSS) in the
+   `/src` directory.
+5. Navigate to "http://localhost:8080" to view a list of available templates.
+
+   > ![Info][img-info] You can navigate to specific templates by visiting
+   > "http://localhost:8080/{filename}/index.html" (replace `{filename}` with
+   > the file you want to view).
+
+6. Make your changes to the files in the `src/` folder and save, templates will
+   recompile automatically.
+7. Once you're happy with the changes, you can compile the production files from
+   `/src` to `/portals` by running `npm run build`.
 8. Commit your changes and push them to your fork.
-9. Open a pull request to the main repository here.
+9. Open a pull request to the main repository
+   [here][url-red-portals-pull-requests].
 
-> ![Info][img-info] Templates should be designed to work on both mobile and
-> desktop devices.
+Important development guidelines:
 
-> ![Info][img-info] Templates should send a query param payload on form submit:
-> `/login?username=example&password=example`.
-
-> ![Info][img-info] Keep examples under 20 KB per template, as some hardware
-> supports only up to this limit.
-
-> ![Warn][img-warning] Templates must include the notice "This is a simulated
-> template for educational purposes only. Not affiliated with or endorsed by any
-> brand."
+- Templates should be designed to work on both mobile and desktop devices.
+- Templates should send a query param payload on form submit:
+  `/login?username=example&password=example`.
+- Keep examples under 20 KB per template, some hardware has this limitation.
+- Templates must include the notice "This is a simulated template for
+  educational purposes only. Not affiliated with or endorsed by any brand."
 
 <p align="right">[ <a href="#index">Index</a> ]</p>
 
@@ -232,11 +234,11 @@ accessible to everyone, so please keep this software free and open source. If
 you have any questions, please let me know by opening an issue
 [here][url-new-issue].
 
-| Type                                                                      | Info                                                                      |
-| :------------------------------------------------------------------------ | :------------------------------------------------------------------------ |
-| <img width="48" src=".github/images/ng-icons/email.svg" />                | webmaster@codytolene.com                                                  |
-| <img width="48" src=".github/images/simple-icons/buymeacoffee.svg" />     | https://www.buymeacoffee.com/codytolene                                   |
-| <img width="48" src=".github/images/simple-icons/bitcoin-btc-logo.svg" /> | [bc1qfx3lvspkj0q077u3gnrnxqkqwyvcku2nml86wmudy7yf2u8edmqq0a5vnt][url-btc] |
+| Type                                                                      | Info                                                           |
+| :------------------------------------------------------------------------ | :------------------------------------------------------------- |
+| <img width="48" src=".github/images/ng-icons/email.svg" />                | webmaster@codytolene.com                                       |
+| <img width="48" src=".github/images/simple-icons/buymeacoffee.svg" />     | https://www.buymeacoffee.com/codytolene                        |
+| <img width="48" src=".github/images/simple-icons/bitcoin-btc-logo.svg" /> | bc1qfx3lvspkj0q077u3gnrnxqkqwyvcku2nml86wmudy7yf2u8edmqq0a5vnt |
 
 Fin. Happy programming friend!
 
@@ -334,9 +336,8 @@ Cody Tolene
 
 <!-- OTHER LINK REFERENCES -->
 
-[url-btc]:
-  https://www.blockchain.com/explorer/addresses/btc/bc1qfx3lvspkj0q077u3gnrnxqkqwyvcku2nml86wmudy7yf2u8edmqq0a5vnt
 [url-githack]: https://raw.githack.com/
 [url-lambda-guru]: https://www.lambda.guru/
 [url-new-issue]: https://github.com/CodyTolene/Red-Portals/issues
 [url-pico-portal]: https://github.com/CodyTolene/Pico-Portal
+[url-red-portals-pull-requests]: https://github.com/CodyTolene/Red-Portals/pulls
