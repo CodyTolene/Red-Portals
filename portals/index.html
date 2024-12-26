@@ -1,73 +1,4 @@
-const htmlmin = require('html-minifier-terser');
-const sass = require('sass');
-const fs = require('fs');
-const path = require('path');
-const prettier = require('prettier');
 
-const outputDirName = 'portals';
-const outputDirBase = `./${outputDirName}/`;
-const srcDir = './src';
-
-/** Eleventy configuration for the build process. */
-module.exports = function (config) {
-  watchForChanges(config);
-  prettifyTemplates(config);
-  compileTemplatesStyling(config);
-  minifyTemplates(config);
-  generateTemplateHomepage(config);
-  return {
-    dir: {
-      input: 'src',
-      output: outputDirName,
-    },
-  };
-};
-
-/**
- * Compile SCSS files into CSS and inline the CSS into the HTML templates.
- *
- * @param config The Eleventy configuration.
- */
-function compileTemplatesStyling(config) {
-  config.addTransform('inline-css', (content, outputDir) => {
-    const baseDir = outputDir.replace(outputDirBase, '');
-    const baseName = (baseDir && baseDir.split('/')[0]) ?? null;
-
-    if (baseName) {
-      const scssDir = `${srcDir}/${baseName}.scss`;
-      const scssFileExists = fs.existsSync(scssDir);
-
-      if (scssFileExists) {
-        const result = sass.compile(scssDir, { style: 'compressed' });
-        const styles = `<style>${result.css}</style>`;
-        return content.replace('</head>', `${styles}</head>`);
-      }
-    }
-    return content;
-  });
-}
-
-/**
- * Generate a homepage with links to all templates.
- * Accessible at http://localhost:8080
- *
- * @param config The Eleventy configuration.
- */
-function generateTemplateHomepage(config) {
-  // Generate a __development only__ home page with links to all templates
-  config.on('afterBuild', () => {
-    const templateFiles = fs
-      .readdirSync(srcDir)
-      .filter((file) => file.endsWith('.html'))
-      .map((file) => {
-        const name = path.basename(file, '.html');
-        return {
-          name,
-          url: `/${name}/index.html`,
-        };
-      });
-
-    const homePageContent = `
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -248,56 +179,8 @@ function generateTemplateHomepage(config) {
           <span style="color:red">Red</span> Portals - Templates
         </h3>
         <ul>
-          ${templateFiles
-            .map((file) => `<li><a href="${file.url}">${file.name}</a></li>`)
-            .join('')}
+          <li><a href="/alaska-airlines/index.html">alaska-airlines</a></li><li><a href="/amazon/index.html">amazon</a></li><li><a href="/apple/index.html">apple</a></li><li><a href="/att/index.html">att</a></li><li><a href="/delta-airlines/index.html">delta-airlines</a></li><li><a href="/discord/index.html">discord</a></li><li><a href="/facebook/index.html">facebook</a></li><li><a href="/google/index.html">google</a></li><li><a href="/instagram/index.html">instagram</a></li><li><a href="/microsoft/index.html">microsoft</a></li><li><a href="/southwest-airline/index.html">southwest-airline</a></li><li><a href="/spectrum/index.html">spectrum</a></li><li><a href="/spirit-airlines/index.html">spirit-airlines</a></li><li><a href="/starbucks/index.html">starbucks</a></li><li><a href="/starlink/index.html">starlink</a></li><li><a href="/t-mobile/index.html">t-mobile</a></li><li><a href="/verizon/index.html">verizon</a></li>
         </ul>
       </body>
       </html>
-    `;
-
-    const homePageDir = path.join(outputDirBase, 'index.html');
-    fs.writeFileSync(homePageDir, homePageContent);
-  });
-}
-
-/**
- * Minify the HTML templates to reduce file size and improve performance.
- *
- * @param config The Eleventy configuration.
- */
-function minifyTemplates(config) {
-  config.addTransform('htmlmin', (content, outputDir) => {
-    if (outputDir && outputDir.endsWith('.html')) {
-      return htmlmin.minify(content, {
-        collapseWhitespace: true,
-        removeComments: true,
-        removeOptionalTags: true,
-        minifyCSS: true,
-        minifyJS: true,
-      });
-    }
-    return content;
-  });
-}
-
-/**
- * Prettify the HTML templates for better readability during development.
- *
- * @param config The Eleventy configuration.
- */
-function prettifyTemplates(config) {
-  config.addFilter('prettify', (code) => {
-    return prettier.format(code, { parser: 'html' });
-  });
-}
-
-/**
- * Watch for changes in HTML/SCSS files, recompile templates on change.
- *
- * @param config The Eleventy configuration.
- */
-function watchForChanges(config) {
-  config.addWatchTarget(`${srcDir}/**/*.scss`);
-  config.addWatchTarget(`${srcDir}/**/*.html`);
-}
+    

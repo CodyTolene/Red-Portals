@@ -1,4 +1,3 @@
-// Colors
 $container-bg: #ffffff;
 $text-color: #1b1b1b;
 $link-color: #3a8ac8;
@@ -62,6 +61,10 @@ main {
 
       &:focus {
         border-bottom: 1px solid $link-color;
+      }
+
+      &:hover {
+        cursor: text;
       }
     }
 
